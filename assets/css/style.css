@@ -47,6 +47,55 @@ body {
     margin: 0 auto;
 }
 
+/* about section */
+.about{
+    padding-bottom:170px;
+}
+.about span,
+.work span {
+    margin: 10px 0px;
+    display: block;
+}
+
+.about-ttl,
+.work-ttl {
+    display:flex;
+   flex-direction: column;
+   align-items: end;
+    padding-bottom: 50px;
+}
+
+.about-list,
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-list ul,
+.work-list ul {
+    font-size: 16px;
+    line-height: 20px;
+    color: #030000;
+    width: calc((100% - 80px)/3);
+   
+}
+
+.about-img {
+    height: 106px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about-list-ttl {
+    margin: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* work section */
 
 /* header section */
 header .header {
@@ -136,6 +185,12 @@ header .header .navbar ul {
 
 
 
+.work-list-ttl {
+    height: 85px;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: center;
+}
 
 /* Responsive */
 @media only screen and (max-width: 999px) {
@@ -192,7 +247,13 @@ header .header .navbar ul {
         margin: 0 auto;
     }
 
+/* about & work section */
+    .about-list ul,
+    .work-list ul {
+        width: calc((100% - 50px)/2);
+        }
 
+<<<<<<< HEAD
     /* header section */
     header .header {
         margin: 25px 0 20px;
@@ -494,5 +555,43 @@ header .header .navbar ul {
     /* slider */
     .slider-sec .center .slider-img img {
         max-width: 150px;
+=======
+    .about-list,
+    .work-list {
+   gap: 50px;
+    }
+    .about{
+        padding-bottom:50px;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+/* about & work section */
+    .about-list ul,
+    .work-list ul {
+        width:100%;
+        }
+
+       .about-list-txt, .work-list-ttl{
+        padding: 0px 20px;
+       } 
+
+       .work-list-img {
+        height: 148px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .work-list-ttl {
+        height: 50px;
+        display: flex;
+        align-items: start;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .about{
+        padding-bottom:30px;
+>>>>>>> zzhk/worksection
     }
 }
