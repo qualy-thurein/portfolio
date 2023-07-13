@@ -46,6 +46,24 @@ body {
     margin: 0 auto;
 }
 
+/* Service Section */
+.service_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.service_details>img{
+    width: 280px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.service_details div>p{
+    line-height: 25px;
+}
 
 
 
@@ -67,8 +85,11 @@ body {
         padding: 0 20px;
         margin: 0 auto;
     }
-
-
 }
 
-@media screen and (max-width:640px) {}
+@media screen and (max-width:640px) {
+    /* service section */
+    .service_details{
+        flex-direction: column;
+    }
+}
