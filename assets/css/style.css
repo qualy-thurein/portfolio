@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --aqua: #38dff7;
+    --skyblue: #c3d9ff;
+    --yellow_green: #dae249;
+    --blue-green: #33ba86;
+    --pale_green: #8ac997;
+    --mayan: #f19ec2;
+    --orange: #ebb771;
+    --grey: #bfbfbf;
+    --gray: #cccccc;
+    --mid_gray: #f8f8f8;
+    --blue: #4d8fff;
+    --gurume: #d6d4ac;
+    --gray_blue: #dbe9ff;
+    --pale_gray: #f5f8ff;
+}
+
+body {
+    font-size: 16px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: YuGothic;
+    src: url(../fonts/yu-gothic/yugothib.ttf);
+}
+
+
+.mw_1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 999px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width:640px) {}
