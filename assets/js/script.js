@@ -56,13 +56,11 @@ $(document).ready(function () {
 
   // Scroll Reveal
   ScrollReveal().reveal('.slide-up',{
-    delay: 500,
+    delay: 200,
     origin: 'bottom',
     distance: '50px',
     interval: 300,
     scale: 0.85,
     reset: true,
   });
-
-
 });
