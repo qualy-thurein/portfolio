@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(".navbar").toggleClass("is-show");
   });
 
-  $('.slider-sec .center').slick({
+  $(".slider-sec .center").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
@@ -16,8 +16,6 @@ $(document).ready(function () {
     speed: 300,
     fade: false,
     variableWidth: true,
-    cssEase: 'linear',
-});
-
-
+    cssEase: "linear",
+  });
 });
