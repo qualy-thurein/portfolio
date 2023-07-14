@@ -48,8 +48,9 @@ body {
 }
 
 /* about section */
-.about{
-    padding-bottom:170px;
+.about, .work{
+padding-top:60px;
+margin: 0px 20px;
 }
 .about span,
 .work span {
@@ -65,16 +66,17 @@ body {
     padding-bottom: 50px;
 }
 
-.about-list,
-.work-list {
+.about-list ul,
+.work-list ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 
-.about-list ul,
-.work-list ul {
+.about-list li,
+.work-list li {
+    list-style-type: none;
     font-size: 16px;
     line-height: 20px;
     color: #030000;
@@ -96,6 +98,45 @@ body {
 }
 
 /* work section */
+.work-list-ttl {
+    height: 80px;
+    align-items: center;
+    padding: 20px 0px 24px;
+    text-align: center;
+}
+.work-list-img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .work-list-img:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value (0.5) to adjust the darkness of the overlay */
+    opacity: 1;
+  }
+  
+  .text {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+  }
+    
+
+
+/* end of work section */
 
 /* header section */
 header .header {
@@ -185,12 +226,7 @@ header .header .navbar ul {
 
 
 
-.work-list-ttl {
-    height: 85px;
-    align-items: center;
-    padding: 20px 0px;
-    text-align: center;
-}
+
 
 /* Responsive */
 @media only screen and (max-width: 999px) {
@@ -248,12 +284,12 @@ header .header .navbar ul {
     }
 
 /* about & work section */
-    .about-list ul,
-    .work-list ul {
+    .about-list li,
+    .work-list li {
         width: calc((100% - 50px)/2);
         }
 
-<<<<<<< HEAD
+
     /* header section */
     header .header {
         margin: 25px 0 20px;
@@ -441,6 +477,37 @@ header .header .navbar ul {
 
     /* End of slider section */
 
+    /* about & work section */
+
+    .about-list li,
+    .work-list li {
+        width:100%;
+        padding: 10px 0px;
+        }
+
+       .about-list-txt, .work-list-txt{
+        margin: 0px 35px;
+        padding: 0px 35px;
+        
+       } 
+       .work-list-img img{
+        height: 200px;
+       }
+       .work-list-img {
+        height: 148px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .work-list-ttl {
+       
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+        text-align: center;
+    }
+   
+
     /* service section */
     .service_details {
         flex-direction: column;
@@ -475,6 +542,9 @@ header .header .navbar ul {
     .slider-sec .center .slider-img img {
         max-width: 320px;
     }
+
+   
+
 }
 
 @media screen and (max-width:530px) {
@@ -488,6 +558,16 @@ header .header .navbar ul {
         padding: 0 15px;
         max-width: 100%;
     }
+     /* work section */
+     .about-list-ttl, .work-list-ttl{
+        margin: 0px 0px;
+        padding:10px 10px;
+    }
+    .about-list-txt, .work-list-txt{
+        margin: 0px 0px;
+        padding:0px 10px;
+    }
+    
 }
 
 @media screen and (max-width:460px) {
@@ -499,6 +579,13 @@ header .header .navbar ul {
 
     .footer .footer-nav ul li a {
         font-size: 16px !important;
+    }
+     /* work section */
+     .work-list-ttl{
+        margin: 10px 0px;
+    }
+    .about-list-txt, .work-list-txt{
+        padding:0px 10px;
     }
 }
 
@@ -555,43 +642,16 @@ header .header .navbar ul {
     /* slider */
     .slider-sec .center .slider-img img {
         max-width: 150px;
-=======
+    }
+
+/* about&work section */
     .about-list,
     .work-list {
    gap: 50px;
     }
-    .about{
-        padding-bottom:50px;
-    }
+
+    
     
 }
 
-@media screen and (max-width:640px) {
-/* about & work section */
-    .about-list ul,
-    .work-list ul {
-        width:100%;
-        }
 
-       .about-list-txt, .work-list-ttl{
-        padding: 0px 20px;
-       } 
-
-       .work-list-img {
-        height: 148px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-    .work-list-ttl {
-        height: 50px;
-        display: flex;
-        align-items: start;
-        padding: 20px 0px;
-        text-align: center;
-    }
-    .about{
-        padding-bottom:30px;
->>>>>>> zzhk/worksection
-    }
-}
