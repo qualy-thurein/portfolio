@@ -34,6 +34,10 @@ body {
     src: url(../fonts/yu-gothic/yugothib.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .mw_1000 {
     max-width: 1000px;
