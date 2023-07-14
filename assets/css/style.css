@@ -240,6 +240,9 @@ footer .container{
         display: flex;
         gap: 30px;
     }
+    .footer .copyright{
+        letter-spacing: 0.5px;
+    }
 
     /* End of footer section */
 }
@@ -252,7 +255,7 @@ footer .container{
     /* footer section */
     .footer .footer-nav ul {
         display: flex;
-        gap: 26px;
+        gap: 22px;
     }
 
     /* End of footer section */
@@ -543,7 +546,7 @@ footer .container{
         right: 8px;
     }
     footer .scroll-top img{
-        width: 70%;
+        width: 60%;
     }
     .footer {
         gap: 20px;
