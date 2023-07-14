@@ -210,3 +210,18 @@
         height: 18px;
     }
 }
+
+@media screen and (max-width:350px) {
+    .slider-sec .slick-prev {
+        left: 8px;
+    }
+    
+    .slider-sec .slick-next {
+        right: 8px;
+    }
+    .slider-sec .slick-prev,
+    .slider-sec .slick-next {
+        width: 10px;
+        height: 18px;
+    }
+}
