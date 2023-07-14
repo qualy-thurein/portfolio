@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- header -->
     <header>
       <div class="container">
@@ -19,7 +19,7 @@
               <img src="assets/img/header_logo.png" alt="クオリーの画像" />
             </a>
           </div>
-          <div class="navbar">
+          <div class="navbar fz-en-b">
             <ul>
               <li><a href="">About</a></li>
               <li><a href="">Service</a></li>
@@ -62,7 +62,7 @@
         </h2>
         <div class="about-list">
           <ul>
-            <li>
+            <li class="slide-up">
               <div class="about-img">
                 <img src="./assets/img/speed.png" alt="スピード" />
               </div>
@@ -81,7 +81,7 @@
           </ul>
 
           <ul>
-            <li>
+            <li class="slide-up">
               <div class="about-img">
                 <img src="./assets/img/flexible.png" alt="スピード" />
               </div>
@@ -100,7 +100,7 @@
           </ul>
 
           <ul>
-            <li>
+            <li class="slide-up">
               <div class="about-img">
                 <img src="./assets/img/experience.png" alt="スピード" />
               </div>
@@ -438,9 +438,14 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="footer">
+      <div class="scroll-top">
+        <a href="#top">
+          <img src="assets/img/scroll_top.png" alt="">
+        </a>
+      </div>
       <div class="container">
-        <div class="footer">
+        <div class="footer fz-en-b">
           <div class="footer-nav">
             <ul>
               <li><a href="">About</a></li>
@@ -455,6 +460,7 @@
     </footer>
 
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
