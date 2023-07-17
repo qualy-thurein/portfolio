@@ -211,7 +211,7 @@ footer .scroll-top{
     position: fixed;
     right: 45px;
     bottom: 129px;
-    z-index: 30;
+    z-index: 20;
 }
 .footer {
     display: flex;
@@ -344,6 +344,12 @@ footer .container{
  padding:40px 20px 0px;
     }
 
+    .about span,
+.work span {
+    margin: 5px 0px;
+    display: block;
+}
+
     /* header section */
     header .header {
         /* margin: 25px 0 20px; */
@@ -370,7 +376,7 @@ footer .container{
         margin: 100px auto 0;
         display: block;
         background-color: #fff59a;
-        z-index: 20;
+        z-index: 999;
         width: 100%;
         padding: 20px 10% 0;
         height: 100vh;
@@ -383,6 +389,10 @@ footer .container{
         padding: 10px;
         text-align: left;
         border-bottom: 1px solid #feca01;
+    }
+    .header .navbar ul li:hover{
+        border-bottom: 1px solid #feca01;
+        transition: all .3s;
     }
 
 
