@@ -341,6 +341,12 @@ footer .container{
  padding:40px 20px 0px;
     }
 
+    .about span,
+.work span {
+    margin: 5px 0px;
+    display: block;
+}
+
     /* header section */
     header .header {
         /* margin: 25px 0 20px; */
