@@ -3,10 +3,25 @@ $(document).ready(function () {
   $(".menu-toggle").on("click", function () {
     $(this).toggleClass("active");
     $("#gnav").toggleClass("is-show");
+    $(".scroll-top").toggleClass("for-z");
   });
-  $("#gnav .menu-nav a").click(function () { 
+  $("#gnav .menu-nav a").click(function () {
     $('#gnav').removeClass('is-show');
-      $('.menu-toggle').removeClass('active');
+    $('.menu-toggle').removeClass('active');
+  });
+
+  // Scroll for show Navbar in responsive
+  var startPos = 0, winScrollTop = 0;
+  $(window).on('scroll', function () {
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop >= startPos && winScrollTop > 100) {
+      $('.header').addClass('hide');
+      $('.header').removeClass('inView');
+    } else {
+      $('.header').removeClass('hide');
+      $('.header').addClass('inView');
+    }
+    startPos = winScrollTop;
   });
 
   // Slider 
@@ -33,33 +48,33 @@ $(document).ready(function () {
         }
       }
     ]
-});
+  });
 
   /// toTop Button///
-  $(function() {
-    $(window).scroll(function() {
+  $(function () {
+    $(window).scroll(function () {
       var winTop = $(this).scrollTop();
-            //footer
-            if (winTop > 250) {
-              $('.scroll-top').fadeIn(1000);
-            } else {
-              $('.scroll-top').fadeOut(1000);
-            }
-            if (winTop + $(window).height() < $("#footer").offset().top) {
-              $(".scroll-top").addClass('fixed');
-            } else {
-              $(".scroll-top").removeClass('fixed');
-            }
+      //footer
+      if (winTop > 250) {
+        $('.scroll-top').fadeIn(1000);
+      } else {
+        $('.scroll-top').fadeOut(1000);
+      }
+      if (winTop + $(window).height() < $("#footer").offset().top) {
+        $(".scroll-top").addClass('fixed');
+      } else {
+        $(".scroll-top").removeClass('fixed');
+      }
 
-          });
-    $(document).on('click', '.scroll-top', function() {
+    });
+    $(document).on('click', '.scroll-top', function () {
       $('html, body').animate({ scrollTop: 0 }, 800);
       return false;
     });
   });
 
   // Scroll Reveal
-  ScrollReveal().reveal('.slide-up',{
+  ScrollReveal().reveal('.slide-up', {
     delay: 200,
     origin: 'bottom',
     distance: '50px',
@@ -67,5 +82,5 @@ $(document).ready(function () {
     scale: 0.85,
     reset: true,
   });
-  
+
 });
