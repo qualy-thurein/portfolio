@@ -211,7 +211,7 @@ footer .scroll-top{
     position: fixed;
     right: 45px;
     bottom: 129px;
-    z-index: 20;
+    z-index: 200;
 }
 .footer {
     display: flex;
@@ -259,11 +259,8 @@ footer .container{
     line-height: 25px;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> bc1c5f2e3bf8ac320a2c7e6062bc1a002b9ad882
 .work-list-ttl {
     height: 85px;
     align-items: center;
