@@ -121,10 +121,17 @@ header .header .navbar ul {
     align-items: center;
     gap: 82px;
 }
-
-.header .navbar ul li a,
-.footer .footer-nav ul li a {
-    font-size: 18px;
+.header .navbar ul li{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FFF;
+    transition: all .6s;
+}
+.header .navbar ul li a{
+    font-size: 22px;
+}
+.header .navbar ul li:hover{
+    border-bottom: 1px solid #000;
+    transition: all .6s;
 }
 
 /* End of header section */
@@ -179,6 +186,9 @@ footer .container{
     display: flex;
     gap: 82px;
 }
+.footer .footer-nav ul li a {
+    font-size: 18px;
+}
 .footer .copyright{
     font-size: 14px;
 }
@@ -207,9 +217,6 @@ footer .container{
 .service_details div>p {
     line-height: 25px;
 }
-
-
-
 
 
 .work-list-ttl {
@@ -294,7 +301,7 @@ footer .container{
         z-index: 30;
         top: 0;
         left: 0;
-        padding-left: 3%;
+        padding-left: 2%;
     }
 
     header .header .logo {
@@ -335,7 +342,7 @@ footer .container{
         display: inline-block;
         position: fixed;
         top: 30px;
-        right: 4%;
+        right: 3%;
         border-radius: 50%;
         transition: all .4s;
         background-color: #fff59a;
@@ -468,7 +475,7 @@ footer .container{
         z-index: 30;
         top: 0;
         left: 0;
-        padding-left: 4%;
+        padding-left: 2%;
     }
 
     header .header .logo {

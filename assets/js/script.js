@@ -63,4 +63,5 @@ $(document).ready(function () {
     scale: 0.85,
     reset: true,
   });
+  
 });
