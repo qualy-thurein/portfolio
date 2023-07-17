@@ -2,10 +2,14 @@ $(document).ready(function () {
   // Navbar Menu
   $(".menu-toggle").on("click", function () {
     $(this).toggleClass("active");
-    // $(".overlay").toggleClass("view");
-    $(".navbar").toggleClass("is-show");
+    $("#gnav").toggleClass("is-show");
+  });
+  $("#gnav .menu-nav a").click(function () { 
+    $('#gnav').removeClass('is-show');
+      $('.menu-toggle').removeClass('active');
   });
 
+  // Slider 
   $(".slider-sec .center").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
