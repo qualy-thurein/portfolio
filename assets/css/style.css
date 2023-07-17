@@ -52,8 +52,9 @@ html{
 }
 
 /* about section */
-.about {
-    padding-bottom: 170px;
+.about, .work {
+
+padding:60px 20px 0px;
 }
 
 .about span,
@@ -70,16 +71,17 @@ html{
     padding-bottom: 50px;
 }
 
-.about-list,
-.work-list {
+.about-list ul,
+.work-list ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 
-.about-list ul,
-.work-list ul {
+.about-list li,
+.work-list li {
+    list-style-type: none;
     font-size: 16px;
     line-height: 20px;
     color: #030000;
@@ -101,6 +103,45 @@ html{
 }
 
 /* work section */
+.work-list-ttl {
+    height: 80px;
+    align-items: center;
+    padding: 20px 0px 20px;
+    text-align: center;
+}
+.work-list-img {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .work-list-img:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value (0.5) to adjust the darkness of the overlay */
+    opacity: 1;
+  }
+  
+  .text {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+  }
+    
+
+
+/* end of work section */
 
 /* header section */
 header .header {
@@ -219,12 +260,14 @@ footer .container{
 }
 
 
+
 .work-list-ttl {
     height: 85px;
     align-items: center;
     padding: 20px 0px;
     text-align: center;
 }
+
 
 /* Responsive */
 @media only screen and (max-width: 999px) {
@@ -285,9 +328,17 @@ footer .container{
     }
 
     /* about & work section */
-    .about-list ul,
-    .work-list ul {
+    .about-list li,
+    .work-list li {
         width: calc((100% - 50px)/2);
+    }
+
+    .about-list ul,
+    .work-list ul{
+    gap:50px;
+}
+.about, .work {
+ padding:40px 20px 0px;
     }
 
     /* header section */
@@ -519,40 +570,46 @@ footer .container{
 
     /* End of slider section */
 
-    /* service section */
-    .service_details {
-        flex-direction: column;
-    }
-
     /* about & work section */
-    .about-list ul,
-    .work-list ul {
-        width: 100%;
-    }
 
-    .about-list-txt,
-    .work-list-ttl {
-        padding: 0px 20px;
-    }
+    .about-list li,
+    .work-list li {
+        width:100%;
+        padding: 10px 0px;
+        }
 
-    .work-list-img {
+       .about-list-txt, .work-list-txt{
+        margin: 0px 35px;
+        padding: 0px 35px;
+        
+       } 
+       .work-list-img img{
+        height: 200px;
+       }
+       .work-list-img {
         height: 148px;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-
     .work-list-ttl {
-        height: 50px;
+       
         display: flex;
-        align-items: start;
+        justify-content: center;
         padding: 20px 0px;
         text-align: center;
     }
+   
+/* end of about list section */
 
-    .about {
-        padding-bottom: 30px;
+    /* service section */
+    .service_details {
+        flex-direction: column;
     }
+
+  
+
+   
 
 
     /* footer section */
@@ -589,6 +646,9 @@ footer .container{
     .slider-sec .center .slider-img {
         max-width: 380px;
     }
+
+   
+
 }
 
 @media screen and (max-width:530px) {
@@ -605,6 +665,17 @@ footer .container{
     .slider-sec .center .slider-img{
         max-width: 320px;
     }
+     /* work section */
+     .about-list-ttl, .work-list-ttl{
+        margin: 0px 0px;
+        padding:10px 10px;
+    }
+    .about-list-txt, .work-list-txt{
+        margin: 0px 0px;
+        padding:0px 10px;
+    }
+   
+    
 }
 
 @media screen and (max-width:460px) {
@@ -616,6 +687,13 @@ footer .container{
 
     .footer .footer-nav ul li a {
         font-size: 16px !important;
+    }
+     /* work section */
+     .work-list-ttl{
+        margin: 10px 0px;
+    }
+    .about-list-txt, .work-list-txt{
+        padding:0px 10px;
     }
 }
 
@@ -673,14 +751,6 @@ footer .container{
 
 @media screen and (max-width:320px) {
 
-
-    .about-list,
-    .work-list {
-        gap: 50px;
-    }
-
-    .about {
-        padding-bottom: 50px;
-    }
+   
 
 }
