@@ -675,12 +675,12 @@ footer .container {
         padding: 10px 0px;
     }
 
-    .about-list-txt,
+    /* .about-list-txt,
     .work-list-txt {
         margin: 0px 35px;
         padding: 0px 35px;
 
-    }
+    } */
 
     .work-list-img>img {
         height: 200px;
@@ -799,11 +799,6 @@ footer .container {
 }
 
 @media screen and (max-width:430px) {
-    /* service */
-    .service-container {
-        padding: 0 5px;
-    }
-
     /* slider */
     .slider-sec .center .slider-img {
         max-width: 270px;
