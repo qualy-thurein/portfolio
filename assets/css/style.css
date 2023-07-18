@@ -114,6 +114,10 @@ html {
 .work-list-img {
     position: relative;
     display: inline-block;
+    
+}
+.work-list-img a >   img{
+    width:100%; 
 }
 
 .overlay {
