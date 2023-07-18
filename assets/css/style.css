@@ -286,7 +286,7 @@ footer .container {
 
 /* Service Section */
 .service-container {
-    padding: 0;
+    /* padding: 0 20px; */
 }
 
 .service_details {
@@ -378,7 +378,8 @@ footer .container {
 
     .about-list ul,
     .work-list ul {
-        gap: 50px;
+        column-gap: 20px;
+        row-gap: 50px;
     }
 
     .about,
