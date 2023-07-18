@@ -51,14 +51,14 @@ html {
     margin: 0 auto;
 }
 
-.slider-sec>.container{
+.slider-sec>.container {
     padding: 0 30px;
 }
 
 /* about section */
 .about>.container,
 .service>.container,
-.work>.container{
+.work>.container {
     padding: 0 40px;
 }
 
@@ -124,10 +124,11 @@ html {
 .work-list-img {
     position: relative;
     display: inline-block;
-    
+
 }
-.work-list-img a >   img{
-    width:100%; 
+
+.work-list-img a>img {
+    width: 100%;
 }
 
 .overlay {
@@ -195,6 +196,11 @@ header .header .navbar ul {
     transition: all .6s;
 }
 
+.menu-link {
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
 /* End of header section */
 
 /* Slider section */
@@ -228,9 +234,10 @@ header .header .navbar ul {
 
 
 /* footer section */
-.footer>.container{
+.footer>.container {
     padding: 0 20px;
 }
+
 footer .scroll-top {
     position: fixed;
     right: 45px;
@@ -253,6 +260,11 @@ footer .container {
     padding: 0;
 }
 
+.footer-nav {
+    letter-spacing: 0.48px;
+    font-weight: 400;
+}
+
 .footer .footer-nav ul {
     display: flex;
     gap: 82px;
@@ -264,13 +276,14 @@ footer .container {
 
 .footer .copyright {
     font-size: 14px;
+    font-weight: 400;
 }
 
 /* End of footer section */
 
 /* Service Section */
 .service-container {
-    padding: 0 20px;
+    padding: 0;
 }
 
 .service_details {
@@ -305,7 +318,7 @@ footer .container {
 @media only screen and (max-width: 999px) {
     .container {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 20px;
         margin: 0 auto;
     }
 
@@ -354,12 +367,6 @@ footer .container {
 
 
 @media only screen and (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-        margin: 0 auto;
-    }
-
     /* about & work section */
     .about-list li,
     .work-list li {
@@ -380,6 +387,12 @@ footer .container {
     .work span {
         margin: 5px 0px;
         display: block;
+    }
+
+    .about>.container,
+    .service>.container,
+    .work>.container {
+        padding: 0;
     }
 
     /* header section */
@@ -657,7 +670,7 @@ footer .container {
 
     }
 
-    .work-list-img img {
+    .work-list-img>img {
         height: 200px;
     }
 
@@ -682,11 +695,6 @@ footer .container {
     .service_details {
         flex-direction: column;
     }
-
-
-
-
-
 
     /* footer section */
     footer .scroll-top {
@@ -779,11 +787,15 @@ footer .container {
 
     .about-list-txt,
     .work-list-txt {
-        padding: 0px 10px;
+        padding: 0;
     }
 }
 
 @media screen and (max-width:430px) {
+    /* service */
+    .service-container {
+        padding: 0 5px;
+    }
 
     /* slider */
     .slider-sec .center .slider-img {
