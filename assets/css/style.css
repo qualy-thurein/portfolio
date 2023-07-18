@@ -50,22 +50,32 @@ html {
     padding: 0 20px;
     margin: 0 auto;
 }
+.sub-container {
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 
 .slider-sec>.container {
     padding: 0 30px;
 }
 
 /* about section */
-.about>.container,
+/* .about>.container,
 .service>.container,
 .work>.container {
     padding: 0 40px;
-}
+} */
 
-.about,
+/* .about,
 .work {
 
     padding: 60px 20px 0px;
+} */
+
+.about,
+.work{
+    padding-top: 60px;
 }
 
 .about span,
@@ -236,9 +246,9 @@ header .header .navbar ul {
 
 
 /* footer section */
-.footer>.container {
+/* .footer>.container {
     padding: 0 20px;
-}
+} */
 
 footer .scroll-top {
     position: fixed;
@@ -259,9 +269,9 @@ footer .scroll-top {
     padding: 250px 0 60px;
 }
 
-footer .container {
+/* footer .container {
     padding: 0;
-}
+} */
 
 .footer-nav {
     letter-spacing: 0.48px;
@@ -373,7 +383,7 @@ footer .container {
     /* about & work section */
     .about-list li,
     .work-list li {
-        width: calc((100% - 50px)/2);
+        width: calc((100% - 20px)/2);
     }
 
     .about-list ul,
@@ -384,7 +394,7 @@ footer .container {
 
     .about,
     .work {
-        padding: 40px 20px 0px;
+        padding: 40px 0px 0px;
     }
 
     .about span,
@@ -770,8 +780,8 @@ footer .container {
 
     .about-list-txt,
     .work-list-txt {
-        margin: 0px 0px;
-        padding: 0px 10px;
+        /* margin: 0px 0px;
+        padding: 0px 10px; */
     }
 
 
