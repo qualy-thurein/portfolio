@@ -171,9 +171,11 @@ header .header .navbar ul {
     border-bottom: 1px solid #FFF;
     transition: all .6s;
 }
-
+.footer .footer-nav ul li a,
 .header .navbar ul li a {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
 }
 
 .header .navbar ul li:hover {
@@ -218,6 +220,7 @@ footer .scroll-top {
     position: fixed;
     right: 45px;
     bottom: 129px;
+    display: none;
     /* z-index: 200; */
 }
 
@@ -241,9 +244,9 @@ footer .container {
     gap: 82px;
 }
 
-.footer .footer-nav ul li a {
+/* .footer .footer-nav ul li a {
     font-size: 18px;
-}
+} */
 
 .footer .copyright {
     font-size: 14px;
@@ -297,10 +300,10 @@ footer .container {
     }
 
     /* footer section */
-    .footer .footer-nav ul {
+    /* .footer .footer-nav ul {
         display: flex;
         gap: 42px;
-    }
+    } */
 
     /* End of footer section */
 }
@@ -308,10 +311,10 @@ footer .container {
 @media only screen and (max-width: 860px) {
 
     /* footer section */
-    .footer .footer-nav ul {
+    /* .footer .footer-nav ul {
         display: flex;
         gap: 30px;
-    }
+    } */
 
     .footer .copyright {
         letter-spacing: 0.5px;
@@ -328,7 +331,7 @@ footer .container {
     /* footer section */
     .footer .footer-nav ul {
         display: flex;
-        gap: 22px;
+        gap: 60px;
     }
 
     /* End of footer section */
@@ -418,7 +421,7 @@ footer .container {
 
     header .header .navbar ul li {
         display: block;
-        padding: 10px;
+        padding: 12px 10px 15px;
         text-align: left;
         border-bottom: 1px solid #feca01;
     }
@@ -431,6 +434,10 @@ footer .container {
 
     .header .navbar ul li a {
         color: #ffc800;
+    }
+    header .header .navbar ul li a,
+    .footer .footer-nav ul li a {
+        font-size: 20px;
     }
 
     .header .menu-toggle {
@@ -512,13 +519,13 @@ footer .container {
     .slider-sec .center .slider-img {
         text-align: center;
         transform: scale(1);
-        max-width: 600px;
-        margin: 0 26px;
+        max-width: 625px;
+        margin: 0 20px;
     }
 
     .slider-sec .center .slider-img.slick-current {
         transform: scale(1);
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
     .slider-sec .center .slick-list {
@@ -531,6 +538,7 @@ footer .container {
     /* footer section */
     footer .scroll-top {
         right: 15px;
+        
     }
 
     footer .scroll-top img {
@@ -565,7 +573,7 @@ footer .container {
     .slider-sec .center .slider-img {
         text-align: center;
         transform: scale(1);
-        max-width: 450px;
+        max-width: 460px;
         margin: 0 33px;
     }
 }
@@ -689,7 +697,7 @@ footer .container {
         display: flex;
         gap: 42px;
     }
-
+    header .header .navbar ul li a,
     .footer .footer-nav ul li a {
         font-size: 18px;
     }

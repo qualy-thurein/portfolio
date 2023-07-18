@@ -31,7 +31,7 @@ $(document).ready(function () {
     infinite: true,
     arrows: true,
     centerMode: true,
-    autoplay: true,
+    autoplay: false,
     speed: 300,
     fade: false,
     variableWidth: true,
