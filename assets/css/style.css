@@ -60,19 +60,6 @@ html {
     padding: 0 30px;
 }
 
-/* about section */
-/* .about>.container,
-.service>.container,
-.work>.container {
-    padding: 0 40px;
-} */
-
-/* .about,
-.work {
-
-    padding: 60px 20px 0px;
-} */
-
 .about,
 .work{
     padding-top: 60px;
@@ -295,8 +282,8 @@ footer .scroll-top {
 /* End of footer section */
 
 /* Service Section */
-.service-container {
-    /* padding: 0 20px; */
+.service_details p{
+    letter-spacing: 0.32px;
 }
 
 .service_details {
