@@ -411,8 +411,8 @@ footer .container {
         width: 100%;
         padding: 20px 10% 0;
         height: 100vh;
-        /* display: none; */
-        opacity: 0;
+        display: none;
+        /* opacity: 0; */
         transition: all .6s;
     }
 
@@ -488,8 +488,8 @@ footer .container {
     }
 
     .header .navbar.is-show ul {
-        /* display: block !important; */
-        opacity: 1 !important;
+        display: block !important;
+        /* opacity: 1 !important; */
         transition: all .6s;
 
     }
