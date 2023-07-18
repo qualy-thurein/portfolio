@@ -46,12 +46,22 @@ html {
 
 
 .container {
-    max-width: 960px;
-    padding: 0 10px;
+    max-width: 1000px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
+.slider-sec>.container{
+    padding: 0 30px;
+}
+
 /* about section */
+.about>.container,
+.service>.container,
+.work>.container{
+    padding: 0 40px;
+}
+
 .about,
 .work {
 
@@ -156,7 +166,7 @@ header .header .logo {
 }
 
 header .header .navbar {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 header .header .navbar ul {
@@ -214,6 +224,9 @@ header .header .navbar ul {
 
 
 /* footer section */
+.footer>.container{
+    padding: 0 20px;
+}
 footer .scroll-top {
     position: fixed;
     right: 45px;
