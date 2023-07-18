@@ -368,6 +368,10 @@ footer .container {
         margin: 5px 0px;
         display: block;
     }
+    .work-list-img{
+      width: 100%;
+    }
+    
 
     /* header section */
     header .header {
@@ -644,16 +648,11 @@ footer .container {
 
     }
 
-    .work-list-img img {
+    .work-list-img a >img {
         height: 200px;
+        width:100%;
     }
-
-    .work-list-img {
-        height: 148px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
+    
 
     .work-list-ttl {
 
