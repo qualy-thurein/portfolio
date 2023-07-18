@@ -12,6 +12,9 @@ Font family
     font-style: normal;
     font-weight: 700;
 }
+.fz-jp{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 .fz-jp-m {
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-style: normal;
