@@ -217,6 +217,7 @@ header .header .navbar ul {
 
 .slider-sec .center .slider-img {
     text-align: center;
+    transition: transform .6s ease;
     transform: scale(0.89);
 }
 

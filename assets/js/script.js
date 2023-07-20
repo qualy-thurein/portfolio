@@ -31,8 +31,9 @@ $(document).ready(function () {
     infinite: true,
     arrows: true,
     centerMode: true,
-    autoplay: false,
-    speed: 300,
+    autoplay: true,
+    // speed: 300,
+    autoplaySpeed: 2000,
     fade: false,
     variableWidth: true,
     cssEase: 'linear',
@@ -73,14 +74,5 @@ $(document).ready(function () {
     });
   });
 
-  // Scroll Reveal
-  ScrollReveal().reveal('.slide-up', {
-    delay: 200,
-    origin: 'bottom',
-    distance: '50px',
-    interval: 300,
-    scale: 0.85,
-    reset: true,
-  });
-
+  
 });

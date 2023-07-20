@@ -1,0 +1,159 @@
+/* # =================================================================
+   # ANIMATION
+   # ================================================================= */
+   @keyframes arrow {
+    0% {
+        right: 15px;
+    }
+    100% {
+        right: 5px;
+    }
+}
+
+/* fadeIn */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1.5s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* fadeUp */
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* fadeDown */
+
+.fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: .5s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeDownAnime {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.blur {
+    animation-name: blurAnime;
+    animation-duration: 1s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes blurAnime {
+    from {
+        transform: scale(1.02);
+        opacity: 0;
+
+        filter: blur(10px);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+        filter: blur(0);
+    }
+}
+
+/*==================================================
+ぱたっ
+===================================*/
+
+/* flipLeftTop */
+.flipLeftTop {
+    animation-name: flipLeftTopAnime;
+    animation-duration: 1s;
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipLeftTopAnime {
+    from {
+        transform: translate(-20px,80px) rotate(-15deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0,0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/*==================================================
+ぶわっ、ぽんっ、どどんっ
+===================================*/
+
+/* zoomIn */
+.zoomIn {
+    animation-name: zoomInAnime;
+    animation-duration: .7s;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomInAnime {
+    from {
+        transform: scale(.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.zoomInTrigger,
+.flipLeftTopTrigger,
+.fadeInTrigger,
+.fadeUpTrigger,
+.fadeDownTrigger,
+.blurTrigger {
+    opacity: 0;
+}
+/* ===============================
+
+=============================== */
