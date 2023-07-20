@@ -3,12 +3,14 @@ $(document).ready(function () {
   $(".menu-toggle").on("click", function () {
     $(this).toggleClass("active");
     $("#gnav").toggleClass("is-show");
+    $("body").toggleClass("over_flow");
     $(".scroll-top").toggleClass("for-z");
   });
   $("#gnav .menu-nav a").click(function () {
     $('#gnav').removeClass('is-show');
     $('.menu-toggle').removeClass('active');
   });
+
 
   // Scroll for show Navbar in responsive
   var startPos = 0, winScrollTop = 0;
@@ -73,6 +75,4 @@ $(document).ready(function () {
       return false;
     });
   });
-
-
 });
