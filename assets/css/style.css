@@ -374,6 +374,10 @@ footer .scroll-top {
         padding: 0 30px;
     }
 
+    .over_flow{
+        overflow: hidden;
+    }
+
     /* about & work section */
     .about-list li,
     .work-list li {
