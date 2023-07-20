@@ -249,7 +249,7 @@ footer .scroll-top {
 }
 
 .for-z {
-    z-index: 100;
+    z-index: 10;
 }
 
 .footer {
@@ -440,6 +440,10 @@ footer .scroll-top {
 
     header .header .navbar {
         transition: all .6s ease;
+        /* display: none;
+        opacity: 0;
+        transition: all .6s;
+        transition: opacity 0.5s ease-in-out; */
     }
 
     header .header .navbar ul {
@@ -457,6 +461,7 @@ footer .scroll-top {
         display: none;
         /* opacity: 0; */
         transition: all .6s;
+        /* transition: opacity 0.5s ease-in-out; */
     }
 
     header .header .navbar ul li {
@@ -535,10 +540,11 @@ footer .scroll-top {
         transition: all .6s;
     }
 
-    .header .navbar.is-show ul {
+    .header .navbar.is-show ul{
         display: block !important;
         /* opacity: 1 !important; */
         transition: all .6s;
+        /* transition-delay: 0.5s; */
 
     }
 
@@ -566,7 +572,7 @@ footer .scroll-top {
 
     .slider-sec .center .slider-img.slick-current {
         transform: scale(1);
-        margin: 0 23px;
+        margin: 0 30px;
     }
 
     .slider-sec .center .slick-list {
