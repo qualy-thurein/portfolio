@@ -84,7 +84,6 @@ header .header .navbar ul {
 
 .footer .footer-nav ul li,
 .header .navbar ul li {
-    border-bottom: 1px solid #FFF;
     transition: all .6s;
     position: relative;
 }
@@ -173,7 +172,6 @@ header .header .navbar ul {
 .header .navbar ul li:hover::before,
 .header .navbar ul li:hover::after {
     width: 100%;
-    /*横幅を100%に*/
 }
 
 .footer-nav ul li:hover span::before,
@@ -181,7 +179,6 @@ header .header .navbar ul {
 .header .navbar ul li:hover span::before,
 .header .navbar ul li:hover span::after {
     height: 100%;
-    /*縦幅を100%に*/
 }
 
 /* End of header section */
@@ -339,7 +336,6 @@ header .header .navbar ul {
 
 .work-list-img:hover .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    /* Change the alpha value (0.5) to adjust the darkness of the overlay */
     /* opacity: 1; */
     transition: all .4s;
     left: 0;
