@@ -64,15 +64,11 @@ html {
 
 /* header section */
 header .header {
-    margin: 85px 0 32px;
-}
-
-header .header .logo {
-    margin-bottom: 33px;
-}
-
-header .header .navbar {
-    margin-right: 40px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 header .header .navbar ul {
@@ -82,8 +78,12 @@ header .header .navbar ul {
     gap: 22px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.footer .footer-nav ul li,
 .header .navbar ul li {
-    /* padding-bottom: 5px; */
     border-bottom: 1px solid #FFF;
     transition: all .6s;
     position: relative;
@@ -97,8 +97,13 @@ header .header .navbar ul {
     transition: all .6s;
 }
 
+
 .header .navbar ul li a {
     padding: 10px 30px;
+}
+
+.footer-nav ul li a {
+    padding: 10px 20px;
 }
 
 .menu-link {
@@ -108,6 +113,8 @@ header .header .navbar ul {
 
 
 /*線の基点位置*/
+.footer-nav ul li::before,
+.footer-nav ul li::after,
 .header .navbar ul li::before,
 .header .navbar ul li::after {
     content: "";
@@ -119,21 +126,26 @@ header .header .navbar ul {
     transition-delay: 0.2s;
 }
 
+.footer-nav ul li::before,
 .header .navbar ul li::before {
     right: 0;
     top: 0;
 }
 
+.footer-nav ul li::after,
 .header .navbar ul li::after {
     left: 0;
     bottom: 0;
 }
 
 
+.footer-nav ul li span,
 .header .navbar ul li span {
     display: block;
 }
 
+.footer-nav ul li span::before,
+.footer-nav ul li span::after,
 .header .navbar ul li span::before,
 .header .navbar ul li span::after {
     content: "";
@@ -144,23 +156,28 @@ header .header .navbar ul {
     transition: all 0.2s linear;
 }
 
+.footer-nav ul li span::before,
 .header .navbar ul li span::before {
     left: 0;
     top: 0;
 }
 
+.footer-nav ul li span::after,
 .header .navbar ul li span::after {
     right: 0;
     bottom: 0;
 }
 
-
+.footer-nav ul li:hover::before,
+.footer-nav ul li:hover::after,
 .header .navbar ul li:hover::before,
 .header .navbar ul li:hover::after {
     width: 100%;
     /*横幅を100%に*/
 }
 
+.footer-nav ul li:hover span::before,
+.footer-nav ul li:hover span::after,
 .header .navbar ul li:hover span::before,
 .header .navbar ul li:hover span::after {
     height: 100%;
@@ -414,7 +431,7 @@ footer .scroll-top {
 
 .footer .footer-nav ul {
     display: flex;
-    gap: 82px;
+    gap: 42px;
 }
 
 
@@ -445,12 +462,16 @@ footer .scroll-top {
 
 @media only screen and (max-width: 860px) {
 
-    /* footer section */
-    /* .footer .footer-nav ul {
-        display: flex;
-        gap: 30px;
-    } */
+    /* header section */
+    header .header .navbar ul {
+        gap: 16px;
+    }
 
+    .header .navbar ul li a {
+        padding: 10px 27px;
+    }
+
+    /* footer section */
     .footer .copyright {
         letter-spacing: 0.5px;
     }
@@ -466,7 +487,7 @@ footer .scroll-top {
     /* footer section */
     .footer .footer-nav ul {
         display: flex;
-        gap: 60px;
+        gap: 20px;
     }
 
     /* End of footer section */
@@ -576,7 +597,7 @@ footer .scroll-top {
     header .header .navbar ul li {
         display: block;
         padding: 12px 10px 15px;
-        text-align: left;
+        text-align: center;
         border-bottom: 1px solid #feca01;
     }
 
@@ -590,9 +611,13 @@ footer .scroll-top {
         color: #ffc800;
     }
 
-    header .header .navbar ul li a,
+
     .footer .footer-nav ul li a {
         font-size: 20px;
+    }
+
+    header .header .navbar ul li a {
+        font-size: 26px;
     }
 
     .header .menu-toggle {
@@ -657,6 +682,18 @@ footer .scroll-top {
 
     }
 
+    .header .navbar ul li:hover::before,
+    .header .navbar ul li:hover::after {
+        width: 0;
+        /*横幅を100%に*/
+    }
+
+    .header .navbar ul li:hover span::before,
+    .header .navbar ul li:hover span::after {
+        height: 0;
+        /*縦幅を100%に*/
+    }
+
     /* End of header section */
 
     /* slider section */
@@ -692,6 +729,11 @@ footer .scroll-top {
     /* End of slider section */
 
     /* footer section */
+
+    #footer {
+        margin-top: 114px;
+    }
+
     footer .scroll-top {
         right: 15px;
 
@@ -707,7 +749,7 @@ footer .scroll-top {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding: 170px 0 50px;
+        padding: 36px 0 50px;
     }
 
     .footer .footer-nav ul {
@@ -783,8 +825,8 @@ footer .scroll-top {
     .slider-sec {
         background-color: #bfbfbf;
         padding: 20px 0;
-        /* margin-top: 69px; */
-        margin-top: 54px;
+        margin-top: 69px;
+        /* margin-top: 54px;    */
     }
 
     .slider-sec .center {
@@ -847,18 +889,27 @@ footer .scroll-top {
         gap: 20px;
         padding: 36px 0 60px;
     }
+
     #footer {
         margin-top: 114px;
     }
 
     .footer .footer-nav ul {
         display: flex;
-        gap: 42px;
+        gap: 10px;
     }
 
-    header .header .navbar ul li a,
+    .footer-nav ul li a {
+        padding: 9px 16px;
+    }
+
+
     .footer .footer-nav ul li a {
         font-size: 18px;
+    }
+
+    header .header .navbar ul li a {
+        font-size: 24px;
     }
 
     .footer .copyright {
@@ -969,9 +1020,13 @@ footer .scroll-top {
     }
 
     /* footer section */
+    .footer-nav ul li a {
+        padding: 8px 15px;
+    }
+
     .footer .footer-nav ul {
         display: flex;
-        gap: 22px;
+        gap: 10px;
     }
 
     /* End of footer section */
@@ -990,11 +1045,12 @@ footer .scroll-top {
     /* footer section */
     .footer .footer-nav ul {
         display: flex;
-        gap: 16px;
+        gap: 10px;
     }
 
     .footer .footer-nav ul li a {
         font-size: 14px !important;
+        padding: 6px 12px;
     }
 
     .footer .copyright {
